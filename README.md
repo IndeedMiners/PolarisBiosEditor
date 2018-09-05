@@ -1,13 +1,13 @@
 # PolarisBiosEditor v1.7.0
 
-### Important: You need to disable SecureBoot / Activate CSM in your
-### Motherboard UEFI because the modification will make
-### the cryptographic signature invalid.
-
 ## Buy mining bios with performance timings! https://mining-bios.eu/
 **Polaris Bios Editor 3 PRO https://mining-bios.eu/product/polaris-bios-editor-3-pro-pbe-3-pro-performance-timings/*
 
 If you don't trust the EXE just build on Linux with ```sh build.sh```. Quick and easy.
+
+### Important: You need to disable SecureBoot / Activate CSM in your
+### Motherboard UEFI because the modification will make
+### the cryptographic signature invalid.
 
 VirusTotal Report: https://www.virustotal.com/de/file/da96cd604093c686e8b1488726ae10a43a550aea5aaba0c0f308183b86f340f3/analysis/1505395469/
 
