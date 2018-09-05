@@ -1,7 +1,7 @@
 # PolarisBiosEditor v1.7.0
 
 ## Buy mining bios with performance timings! https://mining-bios.eu/
-**Polaris Bios Editor 3 PRO https://mining-bios.eu/product/polaris-bios-editor-3-pro-pbe-3-pro-performance-timings/*
+**Polaris Bios Editor 3 PRO https://mining-bios.eu/product/polaris-bios-editor-3-pro-pbe-3-pro-performance-timings/**
 
 If you don't trust the EXE just build on Linux with ```sh build.sh```. Quick and easy.
 
