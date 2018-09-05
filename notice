@@ -1,0 +1,8 @@
+IMPORTANT:
+You need to disable SecureBoot / Activate CSM in your
+Motherboard UEFI because the modification will make
+the cryptographic signature invalid.
+
+If you find an error or missing a feature, feel free
+to create an issue at:
+https://github.com/IndeedMiners/PolarisBiosEditor/issues

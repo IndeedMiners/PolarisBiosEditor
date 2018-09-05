@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{269EEE02-2C77-49AC-8271-62C2BEA0D024}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PolarisBiosEditor.cs">
+    <Files>
+      <File FileName="PolarisBiosEditor.cs" Line="331" Column="47" />
+      <File FileName="PolarisBiosEditor.Designer.cs" Line="144" Column="46" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PolarisBiosEditor" expanded="True">
+            <Node name="PolarisBiosEditor" expanded="True">
+              <Node name="References" expanded="True" />
+              <Node name="PolarisBiosEditor.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.PolarisBiosEditor PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
