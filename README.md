@@ -1,7 +1,9 @@
-# PolarisBiosEditor v1.7.0
+# PolarisBiosEditor v1.7.2
 
 ## Buy mining bios with performance timings! https://mining-bios.eu/
 **Polaris Bios Editor 3 PRO https://mining-bios.eu/product/polaris-bios-editor-3-pro-pbe-3-pro-performance-timings/**
+
+Bios mod guide: https://bitcointalk.org/index.php?topic=1954245.0
 
 If you don't trust the EXE just build on Linux with ```sh build.sh```. Quick and easy.
 
@@ -20,6 +22,14 @@ works on linux with mono, executable is build against .net 3.5
 one click timing feature should be used with care, it maybe not stable for you
 
 please build the executable yourself or decompile the existing one if you don't trust
+### v1.7.2
+- Fixed apply timings for Hynix memory
+- Added support for RX590
+- Added support for New Hynix memory H5GC8H24AJ
+- Added timing for New Hynix H5GC8H24AJ
+
+### v1.7.1
+- Updated Elpida Timing
 
 ### v1.7.0
 - Added New timing for Hynix.
