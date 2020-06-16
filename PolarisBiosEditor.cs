@@ -17,7 +17,7 @@ namespace PolarisBiosEditor
 
         /* DATA */
 
-        string version = "1.7.2";
+        string version = "1.7.3";
         string programTitle = "PolarisBiosEditor";
 
 
@@ -28,7 +28,7 @@ namespace PolarisBiosEditor
             "MICRON"
         };
 
-        string[] supportedDeviceID = new string[] { "67DF", "67EF", "1002", "67FF", "699F" };
+        string[] supportedDeviceID = new string[] { "67DF", "67EF", "1002", "67FF", "699F", "6FDF" };
 
         string[] timings = new string[] 
         {
@@ -61,7 +61,10 @@ namespace PolarisBiosEditor
         // Universal Hynix
          "777000000000000022AA1C00B56A6D46C0551017BE8E060C006006000C081420EA8900AB030000001B162C31C0313F17",
           //Hynix 4
-         "999000000000000022559D0031626C46905F1015BC0D060C004004007D0714204A8900A0020071241B12312CC02D3C17" //new, please test
+         "999000000000000022559D0031626C46905F1015BC0D060C004004007D0714204A8900A0020071241B12312CC02D3C17", //new, please test
+          //Samsung K4G80325FC
+         "777000000000000022CC1C00106A5D4DD0571016B90D060C0060070014051420FA8900A0030000001011333DC0303A17",
+         "777000000000000022CC1C00106A6D4DD0571016B90D060C0060070014051420FA8900A0030000001B11333DC0303A17"
         };
 
     Dictionary<string, string> rc = new Dictionary<string, string>();
@@ -528,6 +531,7 @@ namespace PolarisBiosEditor
             rc.Add("K4G41325FE", "SAMSUNG");
             rc.Add("K4G41325FC", "SAMSUNG");
             rc.Add("K4G41325FS", "SAMSUNG");
+            rc.Add("K4G80325FC", "SAMSUNG_2");
 
             save.Enabled = false;
             boxROM.Enabled = false;
@@ -1452,6 +1456,7 @@ namespace PolarisBiosEditor
         private void button1_Click(object sender, EventArgs e)
         {
             int samsung_index = -1;
+            int samsung_2_index = -1;
             int micron_index = -1;
             int elpida_index = -1;
             int hynix_1_index = -1;
@@ -1478,6 +1483,9 @@ namespace PolarisBiosEditor
                     {
                         case "SAMSUNG":
                             samsung_index = i;
+                            break;
+                        case "SAMSUNG_2":
+                            samsung_2_index = i;
                             break;
                         case "MICRON":
                             micron_index = i;
@@ -1514,6 +1522,20 @@ namespace PolarisBiosEditor
                 {
                     int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying UBERMIX 3.2 timings to 1750+ strap(s)");
                     this.apply_timings1(samsung_index, 1);
+                }
+            }
+
+            if (samsung_2_index != -1)
+            {
+                if (MessageBox.Show("Do you want faster timing?", "Important Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                {
+                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying faster timings to 1750+ strap(s)");
+                    this.apply_timings1(samsung_2_index, 10);
+                }
+                else
+                {
+                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying slower timings to 1750+ strap(s)");
+                    this.apply_timings1(samsung_2_index, 11);
                 }
             }
 
