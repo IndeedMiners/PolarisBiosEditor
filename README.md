@@ -1,4 +1,4 @@
-# PolarisBiosEditor v1.7.2
+# PolarisBiosEditor v1.7.3
 
 ## Buy mining bios with performance timings! https://mining-bios.eu/
 **Polaris Bios Editor 3 PRO https://mining-bios.eu/product/polaris-bios-editor-3-pro-pbe-3-pro-performance-timings/**
@@ -22,6 +22,9 @@ works on linux with mono, executable is build against .net 3.5
 one click timing feature should be used with care, it maybe not stable for you
 
 please build the executable yourself or decompile the existing one if you don't trust
+### v1.7.3
+- Added support for memory Samsung K4G80325FC
+- Added new device AMD Radeon RX 580 2048SP - 6FDF
 ### v1.7.2
 - Fixed apply timings for Hynix memory
 - Added support for RX590
