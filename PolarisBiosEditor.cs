@@ -17,7 +17,7 @@ namespace PolarisBiosEditor
 
         /* DATA */
 
-        string version = "1.7.3";
+        string version = "1.7.4";
         string programTitle = "PolarisBiosEditor";
 
 
@@ -483,7 +483,7 @@ namespace PolarisBiosEditor
         {
             InitializeComponent();
             this.Text = this.programTitle + " " + this.version + " " + "Tweaked By Mattthev";
-            MessageBox.Show("Buy Pro version at https://mining-bios.eu/");
+
             try
             {
 
@@ -1594,10 +1594,7 @@ namespace PolarisBiosEditor
                 apply_timings(elpida_index, 7);
 
             }
-            if (samsung_index == -1 && hynix_2_index == -1 && hynix_3_index == -1 && hynix_1_index == -1 && elpida_index == -1 && micron_index == -1)
-            {
-                MessageBox.Show("Sorry, no supported memory found. If you think this is an error, please file a bugreport @ https://github.com/IndeedMiners/PolarisBiosEditor/issues");
-            }
+
             if (hynix_4_index != -1)
             {
                 if (MessageBox.Show("Do you want Universal Hynix Timing?", "Important Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -1612,8 +1609,15 @@ namespace PolarisBiosEditor
                 }
             }
 
+            if (samsung_index == -1 && samsung_2_index == -1 && hynix_2_index == -1 && hynix_3_index == -1 && hynix_1_index == -1 && elpida_index == -1 && micron_index == -1)
+            {
+                MessageBox.Show("Sorry, no supported memory found. If you think this is an error, please file a bugreport @ https://github.com/IndeedMiners/PolarisBiosEditor/issues");
+            }
             this.tablePOWERPLAY.Items[1].SubItems[1].Text = "2300";
-
+            if (MessageBox.Show("Buy Pro version at https://mining-bios.eu/", "PBE 3 PRO", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.Start("https://bit.ly/mining-bios-eu");
+            }
         }
 
         private void editSubItem2_TextChanged(object sender, EventArgs e)
@@ -1623,7 +1627,7 @@ namespace PolarisBiosEditor
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            System.Diagnostics.Process.Start("http://bit.ly/mining-bios-eu");
+            System.Diagnostics.Process.Start("https://bit.ly/mining-bios-eu");
         }
     }
 }
