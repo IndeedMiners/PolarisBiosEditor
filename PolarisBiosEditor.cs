@@ -17,7 +17,7 @@ namespace PolarisBiosEditor
 
         /* DATA */
 
-        string version = "1.7.4";
+        string version = "1.7.5";
         string programTitle = "PolarisBiosEditor";
 
 
@@ -64,7 +64,9 @@ namespace PolarisBiosEditor
          "999000000000000022559D0031626C46905F1015BC0D060C004004007D0714204A8900A0020071241B12312CC02D3C17", //new, please test
           //Samsung K4G80325FC
          "777000000000000022CC1C00106A5D4DD0571016B90D060C0060070014051420FA8900A0030000001011333DC0303A17",
-         "777000000000000022CC1C00106A6D4DD0571016B90D060C0060070014051420FA8900A0030000001B11333DC0303A17"
+         "777000000000000022CC1C00106A6D4DD0571016B90D060C0060070014051420FA8900A0030000001B11333DC0303A17",
+         // UberMix 3.3
+         "777000000000000022CC1C00AD615C42F0590F15300D9708006007000B031420FA8900A00300000011112F3FBB354019"
         };
 
     Dictionary<string, string> rc = new Dictionary<string, string>();
@@ -1513,15 +1515,20 @@ namespace PolarisBiosEditor
 
             if (samsung_index != -1)
             {
-                if (MessageBox.Show("Do you want faster Uber-mix 3.1?", "Important Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (MessageBox.Show("Do you want faster Uber-mix 3.1?\nIf NO, you can choose from 3.2 and 3.3 later", "Important Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying UBERMIX 3.1 timings to 1750+ strap(s)");
                     this.apply_timings1(samsung_index, 0);
                 }
-                else
+                else if (MessageBox.Show("Do you want Uber-mix 3.2?\nIf NO, Uber-mix 3.3 will be applied", "Important Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
                     int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying UBERMIX 3.2 timings to 1750+ strap(s)");
                     this.apply_timings1(samsung_index, 1);
+                }
+                else
+                {
+                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying UBERMIX 3.3 timings to 1750+ strap(s)");
+                    this.apply_timings1(samsung_index, 12);
                 }
             }
 
