@@ -1,4 +1,4 @@
-# PolarisBiosEditor v1.7.4
+# PolarisBiosEditor v1.7.6
 
 ## Buy mining bios with performance timings! https://mining-bios.eu/
 **Polaris Bios Editor 3 PRO https://mining-bios.eu/product/polaris-bios-editor-3-pro-pbe-3-pro-performance-timings/**
@@ -11,7 +11,7 @@ If you don't trust the EXE just build on Linux with ```sh build.sh```. Quick and
 ### Motherboard UEFI because the modification will make
 ### the cryptographic signature invalid.
 
-VirusTotal Report: https://www.virustotal.com/gui/file/baeba7089443f2341b83fe00302bfd6dcdf3a83b452fa3f085bc76c84162fea1/detection
+VirusTotal Report: https://www.virustotal.com/de/file/da96cd604093c686e8b1488726ae10a43a550aea5aaba0c0f308183b86f340f3/analysis/1505395469/
 
 0/58. If your AV warns you about a virus/trojan, consider it as false positive.
 
@@ -22,6 +22,13 @@ works on linux with mono, executable is build against .net 3.5
 one click timing feature should be used with care, it maybe not stable for you
 
 please build the executable yourself or decompile the existing one if you don't trust
+### v1.7.6
+- Fixed Samsung 2
+- Fixed no supported memory found H5GC8H24AJ bug
+- Few small changes in code
+### v1.7.5
+- Added UberMix 3.3
+- Few small changes in code
 ### v1.7.4
 - Fixed bug no supported memory found (K4G80325FC)
 - Old version bump in properties
