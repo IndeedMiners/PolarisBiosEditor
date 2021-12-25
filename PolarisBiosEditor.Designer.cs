@@ -116,7 +116,7 @@ namespace PolarisBiosEditor
             this.txtChecksum.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.txtChecksum.Location = new System.Drawing.Point(174, 14);
             this.txtChecksum.Name = "txtChecksum";
-            this.txtChecksum.Size = new System.Drawing.Size(100, 23);
+            this.txtChecksum.Size = new System.Drawing.Size(100, 20);
             this.txtChecksum.TabIndex = 2;
             // 
             // txtBIOSBootupMessage
@@ -127,7 +127,7 @@ namespace PolarisBiosEditor
             this.txtBIOSBootupMessage.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.txtBIOSBootupMessage.Location = new System.Drawing.Point(280, 14);
             this.txtBIOSBootupMessage.Name = "txtBIOSBootupMessage";
-            this.txtBIOSBootupMessage.Size = new System.Drawing.Size(815, 23);
+            this.txtBIOSBootupMessage.Size = new System.Drawing.Size(815, 20);
             this.txtBIOSBootupMessage.TabIndex = 5;
             // 
             // boxROM
@@ -147,9 +147,9 @@ namespace PolarisBiosEditor
             this.columnHeader2});
             this.tableROM.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableROM.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.tableROM.Location = new System.Drawing.Point(3, 18);
+            this.tableROM.Location = new System.Drawing.Point(3, 16);
             this.tableROM.Name = "tableROM";
-            this.tableROM.Size = new System.Drawing.Size(259, 119);
+            this.tableROM.Size = new System.Drawing.Size(259, 121);
             this.tableROM.TabIndex = 4;
             this.tableROM.UseCompatibleStateImageBehavior = false;
             this.tableROM.View = System.Windows.Forms.View.Details;
@@ -180,9 +180,9 @@ namespace PolarisBiosEditor
             this.columnHeader4});
             this.tablePOWERPLAY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePOWERPLAY.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.tablePOWERPLAY.Location = new System.Drawing.Point(3, 18);
+            this.tablePOWERPLAY.Location = new System.Drawing.Point(3, 16);
             this.tablePOWERPLAY.Name = "tablePOWERPLAY";
-            this.tablePOWERPLAY.Size = new System.Drawing.Size(259, 136);
+            this.tablePOWERPLAY.Size = new System.Drawing.Size(259, 138);
             this.tablePOWERPLAY.TabIndex = 5;
             this.tablePOWERPLAY.UseCompatibleStateImageBehavior = false;
             this.tablePOWERPLAY.View = System.Windows.Forms.View.Details;
@@ -282,9 +282,9 @@ namespace PolarisBiosEditor
             this.columnHeader12});
             this.tableGPU.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableGPU.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.tableGPU.Location = new System.Drawing.Point(3, 18);
+            this.tableGPU.Location = new System.Drawing.Point(3, 16);
             this.tableGPU.Name = "tableGPU";
-            this.tableGPU.Size = new System.Drawing.Size(254, 182);
+            this.tableGPU.Size = new System.Drawing.Size(254, 184);
             this.tableGPU.TabIndex = 8;
             this.tableGPU.UseCompatibleStateImageBehavior = false;
             this.tableGPU.View = System.Windows.Forms.View.Details;
@@ -314,9 +314,9 @@ namespace PolarisBiosEditor
             this.columnHeader14});
             this.tableMEMORY.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableMEMORY.Font = new System.Drawing.Font("Courier New", 8.25F);
-            this.tableMEMORY.Location = new System.Drawing.Point(3, 18);
+            this.tableMEMORY.Location = new System.Drawing.Point(3, 16);
             this.tableMEMORY.Name = "tableMEMORY";
-            this.tableMEMORY.Size = new System.Drawing.Size(254, 103);
+            this.tableMEMORY.Size = new System.Drawing.Size(254, 105);
             this.tableMEMORY.TabIndex = 9;
             this.tableMEMORY.UseCompatibleStateImageBehavior = false;
             this.tableMEMORY.View = System.Windows.Forms.View.Details;
@@ -374,9 +374,9 @@ namespace PolarisBiosEditor
             this.listVRAM.Dock = System.Windows.Forms.DockStyle.Top;
             this.listVRAM.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.listVRAM.FormattingEnabled = true;
-            this.listVRAM.Location = new System.Drawing.Point(3, 18);
+            this.listVRAM.Location = new System.Drawing.Point(3, 16);
             this.listVRAM.Name = "listVRAM";
-            this.listVRAM.Size = new System.Drawing.Size(546, 25);
+            this.listVRAM.Size = new System.Drawing.Size(546, 22);
             this.listVRAM.TabIndex = 12;
             this.listVRAM.SelectedIndexChanged += new System.EventHandler(this.listVRAM_SelectedIndexChanged);
             this.listVRAM.SelectedValueChanged += new System.EventHandler(this.listVRAM_SelectionChanged);
@@ -411,7 +411,7 @@ namespace PolarisBiosEditor
             this.editSubItem1.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.editSubItem1.Location = new System.Drawing.Point(100, 643);
             this.editSubItem1.Name = "editSubItem1";
-            this.editSubItem1.Size = new System.Drawing.Size(206, 23);
+            this.editSubItem1.Size = new System.Drawing.Size(206, 20);
             this.editSubItem1.TabIndex = 2;
             // 
             // editSubItem2
@@ -421,7 +421,7 @@ namespace PolarisBiosEditor
             this.editSubItem2.Font = new System.Drawing.Font("Courier New", 8.25F);
             this.editSubItem2.Location = new System.Drawing.Point(6, 698);
             this.editSubItem2.Name = "editSubItem2";
-            this.editSubItem2.Size = new System.Drawing.Size(1083, 23);
+            this.editSubItem2.Size = new System.Drawing.Size(1083, 20);
             this.editSubItem2.TabIndex = 2;
             this.editSubItem2.Click += new System.EventHandler(this.editSubItem2_Click);
             this.editSubItem2.TextChanged += new System.EventHandler(this.editSubItem2_TextChanged);
@@ -467,7 +467,7 @@ namespace PolarisBiosEditor
             this.RbETH.Enabled = false;
             this.RbETH.Location = new System.Drawing.Point(6, 16);
             this.RbETH.Name = "RbETH";
-            this.RbETH.Size = new System.Drawing.Size(57, 21);
+            this.RbETH.Size = new System.Drawing.Size(47, 17);
             this.RbETH.TabIndex = 6;
             this.RbETH.Text = "ETH";
             this.RbETH.UseVisualStyleBackColor = true;
@@ -478,7 +478,7 @@ namespace PolarisBiosEditor
             this.RbXMR.Enabled = false;
             this.RbXMR.Location = new System.Drawing.Point(6, 35);
             this.RbXMR.Name = "RbXMR";
-            this.RbXMR.Size = new System.Drawing.Size(193, 21);
+            this.RbXMR.Size = new System.Drawing.Size(150, 17);
             this.RbXMR.TabIndex = 7;
             this.RbXMR.Text = "CN (XMR, RYO, AEON,...)";
             this.RbXMR.UseVisualStyleBackColor = true;
@@ -501,7 +501,7 @@ namespace PolarisBiosEditor
             this.RbPower.AutoSize = true;
             this.RbPower.Location = new System.Drawing.Point(6, 16);
             this.RbPower.Name = "RbPower";
-            this.RbPower.Size = new System.Drawing.Size(113, 21);
+            this.RbPower.Size = new System.Drawing.Size(89, 17);
             this.RbPower.TabIndex = 6;
             this.RbPower.Text = "Power saving";
             this.RbPower.UseVisualStyleBackColor = true;
@@ -512,7 +512,7 @@ namespace PolarisBiosEditor
             this.RbOC.Enabled = false;
             this.RbOC.Location = new System.Drawing.Point(6, 35);
             this.RbOC.Name = "RbOC";
-            this.RbOC.Size = new System.Drawing.Size(196, 21);
+            this.RbOC.Size = new System.Drawing.Size(150, 17);
             this.RbOC.TabIndex = 7;
             this.RbOC.Text = "OC with slight undervolting";
             this.RbOC.UseVisualStyleBackColor = true;
@@ -536,7 +536,7 @@ namespace PolarisBiosEditor
             this.RbWin.Enabled = false;
             this.RbWin.Location = new System.Drawing.Point(6, 16);
             this.RbWin.Name = "RbWin";
-            this.RbWin.Size = new System.Drawing.Size(85, 21);
+            this.RbWin.Size = new System.Drawing.Size(69, 17);
             this.RbWin.TabIndex = 6;
             this.RbWin.Text = "Windows";
             this.RbWin.UseVisualStyleBackColor = true;
@@ -547,14 +547,14 @@ namespace PolarisBiosEditor
             this.RbLin.Enabled = false;
             this.RbLin.Location = new System.Drawing.Point(6, 35);
             this.RbLin.Name = "RbLin";
-            this.RbLin.Size = new System.Drawing.Size(62, 21);
+            this.RbLin.Size = new System.Drawing.Size(50, 17);
             this.RbLin.TabIndex = 7;
             this.RbLin.Text = "Linux";
             this.RbLin.UseVisualStyleBackColor = true;
             // 
             // linkLabel1
             // 
-            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.linkLabel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.linkLabel1.LinkColor = System.Drawing.Color.Red;
             this.linkLabel1.Location = new System.Drawing.Point(12, 671);

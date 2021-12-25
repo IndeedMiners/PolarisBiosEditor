@@ -17,7 +17,7 @@ namespace PolarisBiosEditor
 
         /* DATA */
 
-        string version = "1.7.5";
+        string version = "1.7.6";
         string programTitle = "PolarisBiosEditor";
 
 
@@ -1536,12 +1536,12 @@ namespace PolarisBiosEditor
             {
                 if (MessageBox.Show("Do you want faster timing?", "Important Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying faster timings to 1750+ strap(s)");
+                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_2_index + ", now applying faster timings to 1750+ strap(s)");
                     this.apply_timings1(samsung_2_index, 10);
                 }
                 else
                 {
-                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_index + ", now applying slower timings to 1750+ strap(s)");
+                    int num = (int)MessageBox.Show("Samsung Memory found at index #" + (object)samsung_2_index + ", now applying slower timings to 1750+ strap(s)");
                     this.apply_timings1(samsung_2_index, 11);
                 }
             }
@@ -1616,12 +1616,12 @@ namespace PolarisBiosEditor
                 }
             }
 
-            if (samsung_index == -1 && samsung_2_index == -1 && hynix_2_index == -1 && hynix_3_index == -1 && hynix_1_index == -1 && elpida_index == -1 && micron_index == -1)
+            if (samsung_index == -1 && samsung_2_index == -1 && hynix_2_index == -1 && hynix_3_index == -1 && hynix_1_index == -1 && hynix_4_index == -1 && elpida_index == -1 && micron_index == -1)
             {
                 MessageBox.Show("Sorry, no supported memory found. If you think this is an error, please file a bugreport @ https://github.com/IndeedMiners/PolarisBiosEditor/issues");
             }
             this.tablePOWERPLAY.Items[1].SubItems[1].Text = "2300";
-            if (MessageBox.Show("Buy Pro version at https://mining-bios.eu/", "PBE 3 PRO", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
+            if (MessageBox.Show("Bios is ready for flash\nSupport developer and buy Pro version on https://mining-bios.eu/", "PBE 3 PRO", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk) == DialogResult.Yes)
             {
                 System.Diagnostics.Process.Start("https://bit.ly/mining-bios-eu");
             }
