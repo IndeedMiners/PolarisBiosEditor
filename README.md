@@ -11,7 +11,7 @@ If you don't trust the EXE just build on Linux with ```sh build.sh```. Quick and
 ### Motherboard UEFI because the modification will make
 ### the cryptographic signature invalid.
 
-VirusTotal Report: https://www.virustotal.com/de/file/da96cd604093c686e8b1488726ae10a43a550aea5aaba0c0f308183b86f340f3/analysis/1505395469/
+VirusTotal Report: https://www.virustotal.com/gui/file/baeba7089443f2341b83fe00302bfd6dcdf3a83b452fa3f085bc76c84162fea1/detection
 
 0/58. If your AV warns you about a virus/trojan, consider it as false positive.
 
